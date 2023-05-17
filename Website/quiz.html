@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <link href="css/normalise.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
 <link href="css/stylesheet.css" rel="stylesheet">
-    <title>
-        Quiz Time
-    </title>
-    <body>
-        <div id="wrapper">
-            <nav id="navBar">
-                <ul>
-                    <li><a href="homepage.html">CyberSecurity</a></li>
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a href="network.html">Learn</a></li>
-                    <li><a href="advice.html">Advice</a></li>
-                </ul>
-            </nav>
-            <main>
-                quiz stuff, to be added
-            </main>
-            <footer>References</footer>
-        </div>
-    </body>
+<link href="quiz.js" rel="script">
+<title>
+    Quiz Time
+</title>
+<body>
+    <div id="wrapper">
+        <nav id="navBar">
+            <ul>
+                <li><a href="homepage.html">CyberSecurity</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="network.html">Learn</a></li>
+                <li><a href="advice.html">Advice</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>example</h1>
+            <!-- radio Buttons with number "id's" related to which question -->
+            <p id="1Qbox">q1</p>
+            <input type="radio" name="1quiz" id="1a">
+            <label for="1a" id="1-1-Box">a</label>
+
+            <input type="radio" name="1quiz" id="1b">
+            <label for="1b" id="1-2-Box">b</label>
+
+            <input type="radio" name="1quiz" id="1c">
+            <label for="1c" id="1-3-Box">c</label>
+
+
+            <p id="2Qbox">q2</p>
+            <input type="radio" name="2quiz" id="2a">
+            <label for="2a" id="2-1-Box">a</label>
+
+            <input type="radio" name="2quiz" id="2b">
+            <label for="2b" id="2-2-Box">b</label>
+
+            <input type="radio" name="2quiz" id="2c">
+            <label for="2c" id="2-3-Box">c</label>
+
+
+            <p id="3Qbox">q3</p>
+            <input type="radio" name="3quiz" id="3a">
+            <label for="3a" id="3-1-Box">a</label>
+
+            <input type="radio" name="3quiz" id="3b">
+            <label for="3b" id="3-2-Box">b</label>
+
+            <input type="radio" name="3quiz" id="3c">
+            <label for="3c" id="3-3-Box">c</label>
+
+
+            <p id="4Qbox">q4</p>
+            <input type="radio" name="4quiz" id="4a">
+            <label for="4a" id="4-1-Box">a</label>
+
+            <input type="radio" name="4quiz" id="4b">
+            <label for="4b" id="4-2-Box">b</label>
+
+            <input type="radio" name="4quiz" id="4c">
+            <label for="4c" id="4-3-Box">c</label>
+
+
+            <p id="5Qbox">q5</p>
+            <input type="radio" name="5quiz" id="5a">
+            <label for="5a" id="5-1-Box">a</label>
+
+            <input type="radio" name="5quiz" id="5b">
+            <label for="5b" id="5-2-Box">b</label>
+
+            <input type="radio" name="5quiz" id="5c">
+            <label for="5c" id="5-3-Box">c</label>
+
+            <br>
+            <button type="button" onclick="markQ()">Mark</button>
+            <button type="button" onclick="fetchQ()">Reload test</button>
+        </main>
+        <footer>References</footer>
+    </div>
+</body>
