@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+
+.box {
+  border: 3px solid #666;
+  background-color: #ddd;
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+}
+
+</style>
+<h1>Example 2</h1>
+<p id="Qbox">example question order</p>
+<div class="container" id="Qlist">
+  <div draggable="true" class="box" id="0">A</div>
+  <div draggable="true" class="box" id="1">>B</div>
+  <div draggable="true" class="box" id="2">>C</div>
+  <div draggable="true" class="box" id="3">>D</div>
+  <div draggable="true" class="box" id="4">>E</div>
+</div>
+<button type="button" onclick="markQ()">Mark test</button>
+<button type="button" onclick="fetchQ()">Reload test</button>
+<script>
+const QuArray=[
+	["Q1", "1A", "1B", "1C", "1D", "1E"],
+	["Q2", "2A", "2B", "2C", "2D", "2E"],
+	["Q3", "3A", "3B", "3C", "3D", "3E"],
+	["Q4", "4A", "4B", "4C", "4D", "4E"],
+	["Q5", "5A", "5B", "5C", "5D", "5E"]
+];
+const answer=["","","","",""];
+const order=["A","B","C","D","E"];
+
+function randomArray(array){
+	for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+
+function fetchQ(){
+	let j=Math.floor(Math.random()*5);
+	for (let i=1; i<6; i++){
+		answer[i-1]=QuArray[j][i];
+		order[i-1]=QuArray[j][i];
+	}
+	document.getElementById("Qbox").innerHTML= QuArray[j][0];
+	randomArray(order);
+	for (let i=0; i<5; i++){
+		document.getElementById(i).innerHTML= order[i];
+	}
+	
+}
+
+
+function markQ(){
+	var score=0;
+	for (let i=0; i<5; i++){
+		let userAnswer=document.getElementById(i).innerHTML;
+		if (userAnswer==answer[i]){
+			score=score+20;
+		}
+	}
+	alert("Your score was: "+score+"%");
+}
+
+
+
+function handleDragStart(e) {
+  this.style.opacity = '0.4';
+}
+
+function handleDragEnd(e) {
+  this.style.opacity = '1';
+}
+
+let items = document.querySelectorAll('.container .box');
+items.forEach(function (item) {
+  item.addEventListener('dragstart', handleDragStart);
+  item.addEventListener('dragend', handleDragEnd);
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+
+  function handleDragStart(e) {
+    this.style.opacity = '0.4';
+  }
+
+  function handleDragEnd(e) {
+    this.style.opacity = '1';
+
+    items.forEach(function (item) {
+      item.classList.remove('over');
+    });
+  }
+
+  function handleDragOver(e) {
+    e.preventDefault();
+    return false;
+  }
+
+  function handleDragEnter(e) {
+    this.classList.add('over');
+  }
+
+  function handleDragLeave(e) {
+    this.classList.remove('over');
+  }
+
+  let items = document.querySelectorAll('.container .box');
+  items.forEach(function(item) {
+    item.addEventListener('dragstart', handleDragStart);
+    item.addEventListener('dragover', handleDragOver);
+    item.addEventListener('dragenter', handleDragEnter);
+    item.addEventListener('dragleave', handleDragLeave);
+    item.addEventListener('dragend', handleDragEnd);
+    item.addEventListener('drop', handleDrop);
+  });
+  
+});
+function handleDrop(e) {
+  e.stopPropagation();
+  return false;
+}
+ function handleDragStart(e) {
+  this.style.opacity = '0.4';
+
+  dragSrcEl = this;
+
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/html', this.innerHTML);
+}
+
+function handleDrop(e) {
+  e.stopPropagation();
+
+  if (dragSrcEl !== this) {
+    dragSrcEl.innerHTML = this.innerHTML;
+    this.innerHTML = e.dataTransfer.getData('text/html');
+  }
+
+  return false;
+}
+
+fetchQ();
+</script>
+</body>
+</html>
