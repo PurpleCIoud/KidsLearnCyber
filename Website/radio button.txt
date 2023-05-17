@@ -1,3 +1,87 @@
+Ewari
+Ewari#1984
+
+Good to see you, 
+soma
+.
+ — 08/02/2023 11:24
+Everyone welcome 
+Tupd
+!
+ — 08/02/2023 11:24
+Ewari/Ilja — 08/02/2023 11:33
+What should we call this group btw?
+Ewari/Ilja — 08/02/2023 12:23
+alright made a github repository, Make your own fork and do work on that fork, merge fork to main when you are satisfied with it
+https://github.com/PurpleCIoud/KidsLearnCyber
+GitHub
+GitHub - PurpleCIoud/KidsLearnCyber: A group project where 3 guys w...
+A group project where 3 guys work on making a website for kids who started highschool to learn about internet safety - GitHub - PurpleCIoud/KidsLearnCyber: A group project where 3 guys work on maki...
+GitHub - PurpleCIoud/KidsLearnCyber: A group project where 3 guys w...
+Ewari/Ilja — 08/02/2023 12:43
+this will prove contributions to project and allow us to work on the project independently and rollback if stuff happens
+Tupd — 22/02/2023 11:46
+national curriculum suggestion for key stage 3:  understand a range of ways to use technology safely, respectfully, responsibly and
+securely, including protecting their online identity and privacy; recognise inappropriate
+content, contact and conduct and know how to report concerns.
+Ewari/Ilja — 04/03/2023 16:55
+Ok I will start working on the webpage Next Wednesday, I will setup the pages and get some style on it, I would tho like to get the main page design from all of you so that we can have something to document on.
+Tupd — 08/03/2023 11:45
+Possible idea for layout
+Image
+Ewari/Ilja — 08/03/2023 11:46
+what is the smaller webpage supposed to mean?
+Nevermind I think I know what you mean
+Tupd — 22/03/2023 11:39
+This is just bookmarking a useful Java webpage: https://web.dev/drag-and-drop/
+web.dev
+Using the HTML5 Drag and Drop API
+The HTML5 Drag and Drop API means that we can make almost any element on our page draggable. In this post we’ll explain the basics of drag and drop.
+Using the HTML5 Drag and Drop API
+Tupd — 28/04/2023 11:13
+Just going add that JavaScript functionally should be finished by next week latest, just need to tweak one or two things, so that it is no longer spaghetti code
+Tupd — 03/05/2023 09:37
+ok this will take a bit longer hopefully Thursday-ish, as I made the mistake of not attempting not testing the code on the webserver, (can't tell exactly, but it seems to be an error of "Cross-Origin Request Blocked, when attempting to load from the external txt file), that said hopefully this is a simple fix
+Ewari/Ilja — 06/05/2023 06:03
+On my next day off I will finish all the content on the home page and have it styled
+Tupd — 10/05/2023 11:31
+It might help if either of you turn up next week so that it becomes possible to attempt finish of the project
+soma — 10/05/2023 11:35
+We can book a room in library I think
+Tupd — 10/05/2023 11:35
+*additionally who is doing the documentation, and that said if it is a complete collaborative item,  it is highly difficult to add to it if there currently seems to be nothing there. 
+soma — 10/05/2023 11:37
+Idk if i should use the stuff i had in my google doc
+because its created by gpt
+Tupd — 15/05/2023 16:43
+Code, will upload documentation soon
+Attachment file type: archive
+Java_code.zip
+2.59 KB
+Ewari/Ilja — 15/05/2023 19:49
+Will finish everything tonight
+soma — Yesterday at 10:53
+I have booked a room at library tomorrow after the tutorial in room 9
+from 10:50 to 12:50
+Ewari/Ilja — Yesterday at 10:54
+that sounds fine
+soma — Yesterday at 10:55
+the reference number is  #97728
+Ewari/Ilja — Today at 09:54
+Just going to say I have the CSS and HTML but no content
+I have only placeholders
+But we can talk about it in the session
+Tupd — Today at 11:52
+<!DOCTYPE html>
+<html>
+<body>
+<h1>example</h1>
+<!-- radio Buttons with number "id's" related to which question -->
+<p id="1Qbox">q1</p>
+Expand
+DOCTYPE_html.txt
+9 KB
+﻿
 <!DOCTYPE html>
 <html>
 <body>
@@ -57,6 +141,56 @@
 <input type="radio" name="5quiz" id="5c">
 <label for="5c" id="5-3-Box">c</label>
 
+<p id="6Qbox">q6</p>
+<input type="radio" name="6quiz" id="6a">
+<label for="6a" id="6-1-Box">a</label>
+
+<input type="radio" name="6quiz" id="6b">
+<label for="6b" id="6-2-Box">b</label>
+
+<input type="radio" name="6quiz" id="6c">
+<label for="6c" id="6-3-Box">c</label>
+
+<p id="7Qbox">q7</p>
+<input type="radio" name="7quiz" id="7a">
+<label for="7a" id="7-1-Box">a</label>
+
+<input type="radio" name="7quiz" id="7b">
+<label for="7b" id="7-2-Box">b</label>
+
+<input type="radio" name="7quiz" id="7c">
+<label for="7c" id="7-3-Box">c</label>
+
+<p id="8Qbox">q8</p>
+<input type="radio" name="8quiz" id="8a">
+<label for="8a" id="8-1-Box">a</label>
+
+<input type="radio" name="8quiz" id="8b">
+<label for="8b" id="8-2-Box">b</label>
+
+<input type="radio" name="8quiz" id="8c">
+<label for="8c" id="8-3-Box">c</label>
+
+<p id="9Qbox">q9</p>
+<input type="radio" name="9quiz" id="9a">
+<label for="9a" id="9-1-Box">a</label>
+
+<input type="radio" name="9quiz" id="9b">
+<label for="9b" id="9-2-Box">b</label>
+
+<input type="radio" name="9quiz" id="9c">
+<label for="9c" id="9-3-Box">c</label>
+
+<p id="10Qbox">q10</p>
+<input type="radio" name="10quiz" id="10a">
+<label for="10a" id="10-1-Box">a</label>
+
+<input type="radio" name="10quiz" id="10b">
+<label for="10b" id="10-2-Box">b</label>
+
+<input type="radio" name="10quiz" id="10c">
+<label for="10c" id="10-3-Box">c</label>
+
 <br>
 <button type="button" onclick="markQ()">Mark</button>
 <button type="button" onclick="fetchQ()">Reload test</button>
@@ -64,18 +198,21 @@
 <script>
 <!-- Constant array setup for the questions -->
 const QuArray = [
-	["Q1",1,"A","B","C"],
-	["Q2",2,"A","B","C"],
-	["Q3",3,"A","B","C"],
-	["Q4",1,"A","B","C"],
-	["Q5",2,"A","B","C"],
-	["Q6",3,"A","B","C"],
-	["Q7",1,"A","B","C"]
+	["What is cyber security?",1,"The means by which individuals and organisations reduce the risk of being affected by cyber crime.","The process of encrypting and decrypting data on the internet.","The practice of hacking into other people’s devices and accounts."],
+	["What are the six Cyber Aware actions?",2,"The title of a cyber security podcast.","The slogan of a cyber security campaign.","The government’s advice on how to stay secure online."],
+	["What should you do if you have been hacked?",2,"Use a single password for all your accounts, ignore software and app updates, turn off 2-Step Verification (2SV), write down your passwords, delete your data, and use your name and date of birth.","Use a strong and separate password for your email, install the latest software and app updates, turn on 2-Step Verification (2SV), use password managers, back up your data, and use three random words.","Use a different password for each account, install software and app updates only when necessary, turn off 2-Step Verification (2SV), use biometric authentication, back up your data on external devices, and use five random symbols."],
+	["What should you do if you receive a suspicious email or text?",3,"Ignore it and hope it goes away.","Contact the hacker and negotiate with them.","Change your password and report the incident to the relevant service provider."],
+	["What should you do before buying or selling second-hand devices?",1,"Delete it and block the sender.","Open it and click on any links or attachments.","Reply to it and provide any personal or financial information requested."],
+	["What is CyberFirst?",3,"Leave the personal data on the device and sell it as it is.","Transfer the personal data to another device and keep it for later use.","Erase the personal data from the device and restore it to factory settings."],
+	["What is the NCSC’s role in cyber security?",1,"A programme that offers free opportunities for young people to learn about cyber security.","A competition that challenges schoolgirls to become cyber security champions.","A game that simulates cyber attacks and defenses."],
+	["What are Academic Centres of Excellence in Cyber Security Research?",3,"To educate and train the public and private sectors on cyber security best practices, offering courses and certifications.","To monitor and regulate all online activities in the UK, enforcing cyber security laws and policies.","To act as a bridge between industry and government, providing advice, guidance and support on cyber security, including the management of cyber security incidents."],
+	["What are some of the benefits of cyber security?",2,"Schools that have been awarded by the NCSC for their innovative projects in cyber security.","Universities that have been recognised by the NCSC for their high-quality research in cyber security.","Organisations that have been funded by the NCSC for their impactful initiatives in cyber security."],
+	["What are the benefits of using a secure Wi-Fi connection",3,"It protects our devices, data and online services from theft or damage.","It enhances our online experience and productivity.","All of the above."]
 ];
 <!-- elements for the order of the questions and the answers of said questions -->
 <!-- note: more questions are used than required for total question count --!>
-const order=[0,1,2,3,4,5,6];
-const answers=[0,0,0,0,0];
+const order=[0,1,2,3,4,5,6,7,8,9];
+const answers=[0,0,0,0,0,0,0,0];
 
 <!-- randomising the order of the questions -->
 function randomArray(array){
@@ -89,7 +226,7 @@ function randomArray(array){
 <!-- makes use of two for loops for cycling through the question and the elements of the question --!>
 function fetchQ(){
 	randomArray(order);
-	for (let i=1; i<6; i++){
+	for (let i=1; i<11; i++){
 		var temp=QuArray[order[i-1]];
 		answers[i-1]=temp[1];
 		setElement(i+"Qbox",temp[0]);
@@ -107,7 +244,7 @@ function setElement(idValue, innerValue){
 <!-- uses answer array and getElementsByName for fetching answer of quiz --!>
 function markQ(){
 	var score=0;
-	for (let i=1; i<6; i++){
+	for (let i=1; i<8; i++){
 		var temp =document.getElementsByName(i+'quiz');
 		var answerPos=answers[i-1]-1;
 		if (temp[answerPos].checked){
@@ -121,10 +258,10 @@ function markQ(){
 <!-- additional function for added effect to show correct answers --!>
 function QtextCol(){
 	console.log(answers);
-	for (let i=1; i<6; i++){
-		var temp=QuArray[order[i-1]];
+	for (let i=1; i<11; i++){
 		for(let j=1; j<4; j++){
 			if (j!=answers[i-1]){
+				alert(i+"-"+j+"-Box");
 				document.getElementById(i+"-"+j+"-Box").style.color="grey";
 			} 
 
@@ -136,3 +273,5 @@ fetchQ();
 </script>
 </body>
 </html> 
+DOCTYPE_html.txt
+9 KB
