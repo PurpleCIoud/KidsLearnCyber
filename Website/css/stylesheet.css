@@ -100,6 +100,41 @@ article	{
     background-color: #3f434b;
 }
 
+#radio-inline span {
+    display: block;
+    flex-wrap: wrap;
+}
+
+button {
+    border: #3f434b ;
+    color: #d0c9c9;
+    background-color: #34373f;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+    box-shadow: 0 4px 4px #000000;
+}
+button:hover {
+    background: #595858;
+    box-shadow: 0 4px 4px #000000;
+}
+
+button:active {
+    background: #1f1f1f;
+    box-shadow: 0 4px 4px #000000 inset;
+}
+
+input {
+    border: #3f434b ;
+    color: #d0c9c9;
+    background-color: #34373f;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+    box-shadow: 0 4px 4px #000000;
+}
 img {
     max-width: 100%;
 }
@@ -144,27 +179,40 @@ img {
 
     #quizBlock {
         grid-column: 1;
-        grid-row: 1 / 4;
+        grid-row: 2 / 4;
+    }
+    /*Very hacky way*/
+    #quizBlock h2 {
+        font-size: 56px;
+    }
+    #quizBlock p {
+        font-size: 32px;
     }
 
     #webBlock {
         grid-column: 2;
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
     }
 
     #infoBlock {
+        grid-column: 2;
+        grid-row: 2 / 3;
+    }
+
+    #netsecBlock {
         grid-column: 2;
         grid-row: 3 / 4;
     }
 
     #hackBlock {
         grid-column: 1;
-        grid-row: 4 / 6;
+        grid-row: 1 / 2;
     }
 
-    #netsecBlock {
-        grid-column: 2;
-        grid-row: 4 / 6;
+    #refBlock {
+        text-align: center;
+        grid-column: 1 / 3;
+        grid-row: 4;
     }
 }
 .sizeMod {
